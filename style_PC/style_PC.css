@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/* Reset 시작 */
+* {
+    color: #000;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a              {  text-decoration: none;  }
+a:link         {  color: #333;  }
+a:visited      {  color: #333;  }
+a:hover        {  color: #333;  }
+a:active       {  color: #333;  }
+ul             {  list-style: none;    }
+/* Reset 끝 */
+
+
+/* Guideline 시작 */
+div#wrap         {    border: 1px solid #000;    }
+/*div#intro        {    border: 1px solid #000;    }*/
+/*div#gallery      {    border: 1px solid #000;    }*/
+/* Guideline 끝 */
+
+
+
+/* div#wrap 시작 */
+div#wrap {
+    width: 970px;
+    border: 4px solid #89cfed;
+    margin: 0 auto;
+}
+/* div#wrap 끝 */
+
+
+/* header#header 시작 */
+    /* div#headerLogo 시작 */
+div#headerLogo {
+    width: 962px;
+    height: 280px;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+}
+#headerLogo>h1 {
+    color: #fffe00;
+    font-size: 78px;
+    font-family: 'Roboto', sans-serif;
+    padding: 24px;
+}
+    /* div#headerLogo 끝 */
+
+    /* nav#gnb 시작 */
+nav#gnb {
+    padding-left: 10px;
+    background-color: #006600;
+}
+
+nav#gnb li {
+    float: left;
+}
+nav#gnb ul::after {
+    content: "";
+    height: 56px;
+    /*border: 4px solid #000;*/
+    display: inline-block;
+}
+nav#gnb a {
+    color: #fff;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+   /* border: 2px solid #f00;*/
+    display: inline-block;
+}
+    /* nav#gnb 끝 */
+
+
+/* header#header 끝 */
+
+
+
+/* main#main 시작 */
+
+    /* div#intro 시작 */
+main#main {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    justify-content: space-between;
+}
+main#main div#intro {
+    width: 736px;
+}
+main#main div#intro h2 {
+    padding: 10px;
+}
+main#main div#intro p#introHashTag {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+}
+main#main div#intro p#introHashTag~p {
+    padding: 8px 10px;
+}
+    /* div#intro 끝 */
+
+    /* div#gallery 시작 */
+#main div#gallery {
+    width: 220px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #ddffde;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+    /* div#gallery 끝 */
+
+/* main#main 끝 */
+
+
+/* footer#footer 시작 */
+footer#footer {
+    text-align: center;
+    padding-top: 14px;
+    background-color: #071f1f;
+}
+#footer>address, #footer>div#copyright {
+    color: #fff;
+}
+#footer>address {
+    font-style: normal;
+    padding: 10px;
+}
+#footer>div#copyright {
+    font-style: italic;
+    padding: 6px;
+}
+/* footer#footer 끝 */
+
+
+
+
+
+
+
